@@ -74,6 +74,12 @@ export const BASES_TO_CHECK_TRADES_AGAINST = (
     [ChainId.AVALANCHE]: [WRAPPED_NATIVE_CURRENCY[ChainId.AVALANCHE]!, USDC_AVAX, DAI_AVAX],
     [ChainId.BASE]: [WRAPPED_NATIVE_CURRENCY[ChainId.BASE]!, USDC_BASE],
     [ChainId.BASE_GOERLI]: [WRAPPED_NATIVE_CURRENCY[ChainId.BASE_GOERLI]!],
+    [ChainId.ARBITRUM_SEPOLIA]: [],
+    [ChainId.BLAST]: [],
+    [ChainId.OPTIMISM_SEPOLIA]: [],
+    [ChainId.ZORA]: [],
+    [ChainId.ZORA_SEPOLIA]: [],
+    [ChainId.ROOTSTOCK]: []
   };
 };
 

@@ -101,6 +101,12 @@ export const WETH9: {
     | ChainId.MOONBEAM
     | ChainId.BNB
     | ChainId.AVALANCHE
+    | ChainId.ARBITRUM_SEPOLIA
+    | ChainId.BLAST
+    | ChainId.OPTIMISM_SEPOLIA
+    | ChainId.ZORA
+    | ChainId.ZORA_SEPOLIA
+    | ChainId.ROOTSTOCK
   >]: Token;
 } = {
   [ChainId.MAINNET]: new Token(

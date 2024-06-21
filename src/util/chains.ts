@@ -295,6 +295,50 @@ export const ID_TO_PROVIDER = (id: ChainId): string => {
 };
 
 export const WRAPPED_NATIVE_CURRENCY: { [chainId in ChainId]: Token } = {
+  //Adding fake WETH for testnet
+  [ChainId.OPTIMISM_SEPOLIA]: new Token(
+    11155420,
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  [ChainId.ARBITRUM_SEPOLIA]: new Token(
+    421614,
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  [ChainId.ZORA]: new Token(
+    7777777,
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  [ChainId.ZORA_SEPOLIA]: new Token(
+    999999999,
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  [ChainId.BLAST]: new Token(
+    81457,
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  [ChainId.ROOTSTOCK]: new Token(
+    30,
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  //Starting Real WETH information
   [ChainId.MAINNET]: new Token(
     1,
     '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',

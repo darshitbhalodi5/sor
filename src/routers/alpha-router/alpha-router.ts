@@ -62,7 +62,7 @@ import { IV3SubgraphProvider } from '../../providers/v3/subgraph-provider';
 import { Erc20__factory } from '../../types/other/factories/Erc20__factory';
 import { SWAP_ROUTER_02_ADDRESSES, WRAPPED_NATIVE_CURRENCY } from '../../util';
 import { CurrencyAmount } from '../../util/amounts';
-import { ID_TO_CHAIN_ID, ID_TO_NETWORK_NAME, V2_SUPPORTED } from '../../util/chains';
+import { ID_TO_CHAIN_ID, V2_SUPPORTED } from '../../util/chains';
 import { getHighestLiquidityV3NativePool, getHighestLiquidityV3USDPool } from '../../util/gas-factory-helpers';
 import { log } from '../../util/log';
 import { buildSwapMethodParameters, buildTrade } from '../../util/methodParameters';
@@ -653,7 +653,7 @@ export class AlphaRouter
       );
     this.portionProvider = portionProvider ?? new PortionProvider();
 
-    const chainName = ID_TO_NETWORK_NAME(chainId);
+    // const chainName = ID_TO_NETWORK_NAME(chainId);
 
     // ipfs urls in the following format: `https://cloudflare-ipfs.com/ipns/api.uniswap.org/v1/pools/${protocol}/${chainName}.json`;
     if (v2SubgraphProvider) {
